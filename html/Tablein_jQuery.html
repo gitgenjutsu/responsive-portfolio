@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+
+    <!-- ============== bootstrap ================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <!-- ============== css ================= -->
+    <link rel="stylesheet" href="../css/crud.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+</head>
+
+<body>
+
+
+    <div class="p-5">
+        <table class=" table-responsive table-striped" id="myTable">
+            <caption>
+                Students Enrolled in Admec
+            </caption>
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Students</th>
+                    <th>Course</th>
+                    <th>Address</th>
+                    <th>Contact</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+    </div>
+
+    <!-- ============== Main JS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="../js/crud.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#myTable").DataTable();
+        });
+    </script>
+
+
+</body>
+
+</html>

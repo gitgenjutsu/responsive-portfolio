@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="../css/gooeyEffect.css">
+    <title>Gooey Effect in jQuery</title>
+</head>
+
+<body>
+    <section id="section">
+        <div class="gooey">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#section").click(function() {
+                console.log("click work");
+                var spanTag = $('<span />');
+                $("#section").append(spanTag)
+            })
+            $(".gooey span").draggable();
+        })
+    </script>
+</body>
+
+</html>

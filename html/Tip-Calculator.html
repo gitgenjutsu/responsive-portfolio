@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <!-- ============== font icons ================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- ============== bootstrap ================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <!-- ============== css ================= -->
+    <link rel="stylesheet" href="../css/tip-calc.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="tipForm d-flex justify-content-between align-items-center">
+                <div class="card d-flex justify-content-between align-items-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-center main_heading">Tip Calculator</h5>
+                        <form action="" id="form">
+                            <div class="form_field">
+                                <div class="form-group col-12 col-md-12 col-lg-12 bill_input">
+                                    <div class="input-group mb-5">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">₹</div>
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroup billAmount" placeholder="Bill Amount">
+                                    </div>
+                                    <div class="slidecontainer">
+                                        <h2 class="font-weight-normal" style="font-size: 20px;">Tip </h2>
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <span>Min : 0</span>
+                                            </div>
+                                            <div>
+                                                <span>Max : </span>
+                                                <span id="demo">100%</span>
+                                            </div>
+                                        </div>
+                                        <span id="tip_percent">0</span>
+                                        <input type="range" min="0" max="100" value="50" class="range-slider" id="myRange">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="form-group total_bill">
+                                    <h5 class="card-title text-center total_heading">Total Bill</h5>
+                                    <div class="input-group my-5">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Tip Amount ₹</div>
+                                        </div>
+                                        <input type="text" class="form-control Totaltip" id="inlineFormInputGroup" readonly>
+                                    </div>
+                                    <div class="input-group mt-4">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Total Bill with Tip ₹</div>
+                                        </div>
+                                        <input type="text" class="form-control TotalBill" id="inlineFormInputGroup" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let tipSlide = document.querySelector("#tip_percent");
+        let tipAmount = document.querySelector("#myRange");
+        tipAmount.oninput = function() {
+            tip = tipAmount.value;
+            tipSlide.innerHTML = tip + "%";
+            tipSlide.style.left = tip + "% ";
+            tipSlide.classList.add("show");
+        }
+        document.querySelector("#form").onchange = function() {
+            var bill = document.querySelector("input[type=text]").value;
+            tip = tipAmount.value;
+            tip = tip / 100;
+            temp = tip * bill;
+            document.querySelector(".Totaltip").value = parseInt(temp);
+            bill = +temp + +bill;
+            document.querySelector(".TotalBill").value = parseInt(bill);
+
+        }
+    </script>
+</body>
+
+</html>

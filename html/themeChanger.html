@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Changer</title>
+
+    <!-- ============== box icons ================= -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- ============== bootstrap ================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <!-- ============== css ================= -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/themeChanger.css">
+
+</head>
+
+<body>
+    <!-- ============== Header ================= -->
+    <header class="header">
+        <nav class="nav bd-grid">
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-left'></i>
+            </div>
+
+
+            <div class="logo">
+                <a href="Portfolio.html" target="_blank" class="navbar-brand nav_logo">W</a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <div class="nav_close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="Portfolio.html" class="nav_link active"><i class="fas fa-home px-2"></i>Back to
+                            Home</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" id="header-top">
+        <section class="works" id="works">
+            <!-- page content -->
+            <div id="Themecontent" class="d-flex justify-content-between align-items-center">
+                <div class="box">
+                    <p class="title">Pick a color</p>
+                    <div class="first" title="Red"></div>
+                    <div class="sec" title="Yellow"></div>
+                    <div class="third" title="Blue"></div>
+                </div>
+                <div class="randomClr">
+                    <span id="hex"></span>
+                    <button id="clrBtn" class="btn btn-primary">Random Color</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+
+    <script src="../js/themeChanger.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

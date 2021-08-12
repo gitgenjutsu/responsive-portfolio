@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Card colors</title>
+    <!-- ============== font icons ================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- ============== bootstrap ================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/flipCard.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-between main_box">
+                <div class="wrapper mx-auto text-center my-4">
+                    <h1>Guess the color game</h1>
+                    <h3>You have <span id="clicks">4</span> Click left</h3>
+                    <p id="text"></p>
+                    <button class="btn btn-info newGame">New Game</button>
+
+                </div>
+                <div class="card_container mt-1">
+                    <div class="card card1"></div>
+                    <div class="card card2"></div>
+                    <div class="card card3"></div>
+                    <div class="card card4"></div>
+                    <div class="card card5"></div>
+                    <div class="card card6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/flipCard.js"></script>
+</body>
+
+</html>

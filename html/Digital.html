@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- ============== Header ================= -->
+    <header class="header">
+        <nav class="nav bd-grid">
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-left'></i>
+            </div>
+
+
+            <div class="logo">
+                <a href="Portfolio.html" class="navbar-brand nav_logo">W</a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <div class="nav_close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="Portfolio.html" class="nav_link active"><i class="fas fa-home px-2"></i>Back to
+                            Home</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid Clockbg">
+        <div class="row">
+            <div id="digitalClock">
+                <div id="hours"></div>
+                <div id="minutes"></div>
+                <div id="seconds"></div>
+                <div id="ampm"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/digital.js">
+    </script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

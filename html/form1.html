@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+
+    <!-- ============== box icons ================= -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ============== bootstrap ================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <!-- ============== css ================= -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="css/contact.css"> -->
+
+</head>
+
+<body>
+    <!-- ============== Header ================= -->
+    <header class="header">
+        <nav class="nav bd-grid">
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-left'></i>
+            </div>
+
+
+            <div class="logo">
+                <a href="Portfolio.html" class="navbar-brand nav_logo">W</a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <div class="nav_close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="Portfolio.html" class="nav_link active"><i class="fas fa-home px-2"></i>Back to
+                            Home</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" id="header-top">
+        <section class="works" id="works">
+            <!-- page content -->
+            <div id="content">
+                <nav class="navbar navbar-expand-lg navbar-light  w-100">
+                    <div class="container-fluid">
+
+                        <section class="contact section" id="contact">
+                            <span class="section-subtitle">Contact Me</span>
+                            <h2 class="section-title">Errors in span tag</h2>
+
+                            <div class="contact_container bd-grid">
+
+                                <div class="contform">
+                                    <div class="inputBox error_field w-50">
+                                        <input type="text" id="firstName" placeholder="First Name" onblur="firstuserName(this)">
+                                        <i class="" id="validFirstName"></i>
+                                        <label for="" id="firstNameError"></label>
+                                    </div>
+                                    <div class="inputBox error_field w-50">
+                                        <input type="text" id="lastName" placeholder="Last Name" onblur="lastuserName(this)">
+                                        <i class="" id="validLastName"></i>
+                                        <label for="" id="lastNameError"></label>
+                                    </div>
+                                    <div class="inputBox error_field w-50">
+                                        <input type="text" id="email" placeholder="Your Email id" onblur="userEmail(this)">
+                                        <i class="" id="validUserEmail"></i>
+                                        <label for="" id="emailError"></label>
+                                    </div>
+                                    <div class="inputBox error_field w-50">
+                                        <input type="text" id="num" placeholder="Contact Number" minlength="10" maxlength="10" onblur="validContact(this)">
+                                        <i class="" id="validNumber"></i>
+                                        <label for="" id="contactError"></label>
+                                    </div>
+                                    <div class="inputBox radioBox w-50">
+                                        <span id="genderError"></span>
+                                        <input type="radio" name="gender" value="Male"><span id="male">Male</span>
+                                        <input type="radio" name="gender" value="Female"><span id="female">Female</span>
+                                    </div>
+                                    <div class="inputBox w-100">
+                                        <select id="city" name="city" class="cityError">
+                                            <option value="" id="cityError">Select Your City
+                                            </option>
+                                            <option value="New Delhi">New Delhi</option>
+                                            <option value="Kolkata">Kolkata</option>
+                                            <option value="Mumbai">Mumbai</option>
+                                            <option value="Patna">Patna</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-100">
+                                        <textarea id="msg" placeholder="Drop a message here*"></textarea>
+                                        <span id="msgSpan"></span>
+                                    </div>
+                                    <div class="inputBox cookies w-100">
+                                        <input type="checkbox" id="checkbox"><span id="checkboxError">Accept all
+                                            terms and
+                                            conditions</span>
+                                    </div>
+                                    <div class="inputBox mybtn w-100">
+                                        <button class="btn btn-success" id="send">Send Message</button>
+                                    </div>
+                                </div>
+
+                                <div class="contact_details">
+                                    <div class="contact_info">
+                                        <h3 class="contact_subtitle">Call me</h3>
+                                        <span class="contact_text"><i class='bx bx-phone'></i><a
+                                                href="tel:+919716689303">+91-9716689303</a>
+                                        </span>
+                                    </div>
+
+                                    <div class="contact_info">
+                                        <h3 class="contact_subtitle">Email at</h3>
+                                        <span class="contact_text"><i class='bx bx-mail-send'></i> <a
+                                                href="mailto:wasimraja@live.com">wasimraja@live.com</a></span>
+                                    </div>
+
+                                    <div class="contact_info">
+                                        <h3 class="contact_subtitle">Address</h3>
+                                        <span class="contact_text">
+                                            <Address><i class='bx bx-location-plus'></i> <a
+                                                    href="https://www.google.com/maps/dir/28.5069712,77.320955/ADMEC+Multimedia+Institute,+C-7%2F114,+Sector+7,+IInd+Floor+Pocket+7,+Sector+7C,+Rohini+Landmark:+Rohini+East+Metro+Station,+D+13,+Pocket+7,+Sector+7C,+Rohini,+Delhi,+110085,+India/@28.6150584,77.0826409,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390d015fc7285ae3:0x6b0d619671ba366f!2m2!1d77.1231543!2d28.7090559"
+                                                    target="_blank">Sec-7
+                                                    Rohini</a></Address>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </section>
+
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <!-- ============== Main JS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/form1.js"></script>
+
+
+
+</body>
+
+</html>

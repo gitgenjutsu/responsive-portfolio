@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Loader in jQuery</title>
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+
+<body>
+    <div class="loader">Loading...</div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RXTVvJrp3Vw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="../js/jquery.light-carousel.js"></script>
+    <script>
+        $(window).on('load', function() {
+            $('.loader').delay(100).fadeOut('slow');
+            $('body').delay(50).fadeIn('slow').css({
+                'overflow': 'visible'
+            });
+        })
+    </script>
+</body>
+
+</html>

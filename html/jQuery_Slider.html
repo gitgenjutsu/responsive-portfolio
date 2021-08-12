@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Slider</title>
+
+    <!-- ============== box icons ================= -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- ============== bootstrap ================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <!-- ============== css ================= -->
+    <link rel="stylesheet" href="css/slider.css">
+
+</head>
+
+<body>
+
+
+    <main class="main" id="header-top">
+        <section class="works" id="works">
+            <!-- page content -->
+            <div id="content" class="mt-5 ">
+                <nav class="navbar navbar-expand-lg navbar-light  w-100">
+                    <div class="container-fluid">
+
+                        <div class="main_box">
+                            <div class="carousel slide" data-bs-ride="carousel">
+
+                                <!-- indicators -->
+                                <div class="carousel-indicators indicator">
+                                </div>
+
+                                <div class="carousel-inner slider_div">
+                                    <div class="carousel-item active ">
+                                        <div class="counter">
+                                            <span id="current"></span>
+                                            <span id="total"></span>
+                                        </div>
+
+                                        <img src="img/pic2.jpg" class="" id="pic" alt="1">
+
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5 id="caption">First slide label</h5>
+                                            <p id="writer">Nulla vitae elit libero, a pharetra augue mollis interdum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a class="carousel-control-prev" href="#" id="prevSlide" role="button" data-bs-slide="prev">
+                                    <span><img src="" class="prevImg" width="100px" height="100px"
+                                            style="border-radius: 8px;" alt="not found"></span>
+                                </a>
+
+                                <a class="carousel-control-next" href="#" id="nextSlide" role="button" data-bs-slide="next">
+                                    <span><img src="" class="nextImg" width="100px" height="100px"
+                                            style="border-radius: 8px;" alt="not found"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <!-- ============== Main JS ================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jQuery_Slider.js"></script>
+
+
+
+</body>
+
+</html>

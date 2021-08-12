@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- ============== box icons ================= -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- ============== bootstrap ================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <!-- ============== css ================= -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/calc.css">
+
+</head>
+
+<body>
+    <!-- ============== Header ================= -->
+    <header class="header">
+        <nav class="nav bd-grid">
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-left'></i>
+            </div>
+
+
+            <div class="logo">
+                <a href="Portfolio.html" class="navbar-brand nav_logo">W</a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <div class="nav_close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="Portfolio.html" class="nav_link active"><i class="fas fa-home px-2"></i>Back to
+                            Home</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main " id="header-top">
+        <section class="works" id="works">
+            <!-- page content -->
+            <div id="content" class="d-flex justify-content-center align-items-center">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+
+                        <div class="calc">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="text-capatialize">Calculator</h3>
+                                <input type="reset" value="Clear" id="reset" class="w-25 text-danger">
+                            </div>
+                            <input type="text" id="num1" placeholder="Enter First Number"><br><br>
+                            <input type="text" id="num2" placeholder="Enter Second Number"><br><br>
+                            <input type="text" id="output" placeholder="0" readonly><br><br>
+
+                            <button id="addBtn" onclick="addVal()" class="btn btn-primary">Add</button>
+                            <button id="subBtn" onclick="subVal()" class="btn btn-secondary">Subtract</button><br>
+                            <button id="mulBtn" onclick="mulVal()" class="btn btn-success">Multiply</button>
+                            <button id="divBtn" onclick="divVal()" class="btn btn-dark">Divide</button>
+
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <!-- ============== Main JS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/calc.js"></script>
+
+
+
+</body>
+
+</html>

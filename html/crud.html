@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+
+    <!-- ============== box icons ================= -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <!-- ============== bootstrap ================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
+    <!-- ============== css ================= -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/crud.css"> -->
+
+</head>
+
+<body>
+    <!-- ============== Header ================= -->
+    <header class="header">
+        <nav class="nav bd-grid">
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-left'></i>
+            </div>
+
+
+            <div class="logo">
+                <a href="Portfolio.html" class="navbar-brand nav_logo">W</a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <div class="nav_close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="Portfolio.html" class="nav_link active"><i class="fas fa-home px-2"></i>Back to
+                            Home</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <main class="main" id="header-top">
+        <section class="works" id="works"> -->
+    <!-- page content -->
+    <div id="crud_content" class="crud">
+        <div id="wrapper">
+            <div class="crud_table">
+
+                <div class="table_div">
+                    <div class="search_data w-100">
+                        <button class="btn btn-outline-primary" id="addStudPopup">Add New Student</button>
+                        <input type="search" name="" id="searchData" placeholder="Search a Student Data" onfocus="showSuggestion()" onblur="hideSuggestion()"><i class="fas fa-search"></i>
+                    </div>
+                    <div class="" id="inputSugg"></div>
+                    <table class="table table-responsive">
+                        <caption>
+                            Students Enrolled in Admec
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Students</th>
+                                <th>Course</th>
+                                <th>Address</th>
+                                <th>Contact</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+
+                <!-- add student popup -->
+                <div class="popUp hideModal">
+                    <div id="addNewStud" class="hideModal">
+                        <button class="btn btn-primary" id="close_form">Close</button>
+                        <!-- <h6>Student Id</h6>
+                        <input type="text" id="stud_id" placeholder="ex. S1" />
+                        <br /><br /> -->
+                        <h6>Full Name</h6>
+                        <input type="text" id="stud_name" placeholder="ex. Mohd Wasim" />
+                        <br /><br />
+                        <h6>Course </h6>
+                        <input type="text" id="course" placeholder="ex. Web Master" />
+                        <br /><br />
+                        <h6>Address </h6>
+                        <input type="text" id="address" placeholder="ex. Saket" />
+                        <br /><br />
+                        <h6>Contact </h6>
+                        <input type="text" id="contact" placeholder="ex. 9090909090" maxlength="10" minlength="10" />
+                        <br /><br />
+                        <div>
+                            <h6>Assignment Status </h6>
+                            <input type="radio" id="submit" name="assignment" value="Submitted" /> Submitted
+                            <input type="radio" id="notSubmit" name="assignment" value="Not Submitted" /> Not Submitted
+                        </div>
+                        <br /><br />
+                        <div>
+                            <h6>Fees Status </h6>
+                            <input type="radio" id="paid" name="fees" value="paid" /> Paid
+                            <input type="radio" id="notPaid" name="fees" value="not paid" /> Not Paid
+                        </div>
+                        <br /><br />
+
+                        <input type="button" id="addStud" value="Add" />
+                        <input type="button" id="updateDetails" data-student="2" value="Update" />
+                        <input type="button" id="resetForm" value="Reset Form" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for view -->
+            <div id="modal" class="hideModal">
+                <h4 class="assign_info"></h4><br>
+                <button class="btn btn-primary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- </section>
+    </main> -->
+    <!-- ============== Main JS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="../js/crud.js"></script>
+
+
+
+</body>
+
+</html>
