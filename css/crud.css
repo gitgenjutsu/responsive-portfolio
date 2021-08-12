@@ -1,0 +1,300 @@
+#crud_content {
+    text-align: center;
+    background-color: #ececec;
+    color: #202020;
+    font-family: 'poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    padding: 12px;
+    height: auto;
+}
+
+table,
+td,
+th {
+    border-collapse: collapse;
+}
+
+caption {
+    text-transform: capitalize;
+}
+
+td,
+th {
+    padding: 10px;
+}
+
+nav {
+    border-bottom: 1px solid transparent;
+}
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ececec;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    flex: 0 0 100%;
+}
+
+#wrapper #book_form {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: max-content;
+    max-width: 250px;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.288), 10px 10px 15px rgba(70, 70, 70, 0.534);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#wrapper .table_div {
+    position: absolute;
+    left: 0;
+    max-width: max-content;
+    border-radius: 10px;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, .55), 10px 10px 15px rgba(70, 70, 70, .12);
+}
+
+#wrapper .table_div #searchData {
+    padding: 5px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    box-shadow: inset -10px -10px 15px rgba(255, 255, 255, .55), inset 10px 10px 15px rgba(70, 70, 70, .11);
+    padding: 7px;
+    width: 50%;
+    border-radius: 7px;
+    outline: none;
+    text-align: center;
+}
+
+#wrapper .table_div .inputSuggestion {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    height: auto;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#wrapper .table_div .hide {
+    display: none;
+}
+
+#wrapper .table_div .fas.fa-search {
+    font-size: .9rem;
+    color: #202020;
+}
+
+#wrapper .table_div #searchData::placeholder {
+    font-size: 1rem;
+    color: #202020;
+}
+
+#wrapper .table_div thead,
+tbody {
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, .55), 10px 10px 15px rgba(70, 70, 70, .12);
+}
+
+#wrapper .table_div tbody tr td {
+    box-shadow: inset -10px -10px 15px rgba(255, 255, 255, .55), inset 10px 10px 15px rgba(70, 70, 70, .12);
+}
+
+#wrapper #book_form label h6 {
+    margin-bottom: 10px;
+    font-size: inherit;
+    text-transform: uppercase;
+}
+
+#wrapper #book_form input[type="text"] {
+    margin-bottom: 8px;
+    background-color: transparent;
+    border: none;
+    box-shadow: inset -10px -10px 15px rgba(255, 255, 255, .55), inset 10px 10px 15px rgba(70, 70, 70, .11);
+    padding: 7px;
+    width: 80%;
+    border-radius: 7px;
+    outline: none;
+}
+
+#wrapper #book_form input[type="button"] {
+    display: inline-block;
+    width: 80px;
+    margin-left: 8%;
+    text-align: center;
+    font-size: .72rem;
+    font-weight: inherit;
+    color: rgba(0, 0, 0, .55);
+    border-radius: 30px;
+    border: none;
+    padding: 8px;
+    margin-bottom: 9px;
+    box-shadow: -8px -8px 18px rgba(255, 255, 255, 0.945), 8px 8px 12px rgba(48, 48, 48, 0.205);
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+#wrapper #book_form input[type="button"]:last-child {
+    margin-bottom: 0;
+    color: #e90707;
+}
+
+#wrapper #book_form input[type="button"]:nth-child(even) {
+    color: rgba(30, 104, 8, 0.781);
+}
+
+::placeholder {
+    font-size: 10px;
+    font-weight: 500;
+    color: #7c7c7c;
+    letter-spacing: 1.3px;
+}
+
+.editBtn,
+.viewBtn,
+.deleteBtn {
+    display: inline-block;
+    width: max-content;
+    margin-left: 8px;
+    text-align: center;
+    font-size: .7rem;
+    font-weight: inherit;
+    color: rgba(0, 0, 0, .55);
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 12px;
+    box-shadow: -8px -8px 18px rgba(255, 255, 255, 0.945), 8px 8px 12px rgba(48, 48, 48, 0.205);
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.viewBtn {
+    color: rgba(1, 111, 255, 0.55);
+}
+
+.deleteBtn {
+    color: rgba(255, 1, 1, 0.55);
+}
+
+#toggleForm {
+    position: absolute;
+    right: 5%;
+    top: 100%;
+    width: 20rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: inherit;
+    color: rgba(1, 255, 107, 0.966);
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.945), 10px 10px 15px rgba(48, 48, 48, 0.205);
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+#nameError,
+#addressError,
+#contactError,
+#courseError,
+#feesError,
+#assignmentError {
+    color: rgba(255, 1, 1, 0.55);
+}
+
+.noRecFound {
+    font-size: 1.1rem;
+    color: rgba(255, 1, 1, 0.55);
+}
+
+#message {
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    bottom: 10px;
+    width: max-content;
+    color: rgba(255, 1, 1, 0.55);
+}
+
+#message .assign_info {
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.hideModal {
+    display: none;
+    transition: .7s;
+}
+
+.showModal {
+    display: block;
+    padding: 1.2rem;
+    line-height: 1.2rem;
+    position: absolute;
+    font-size: inherit;
+    top: 100%;
+    left: 25%;
+    width: 420px;
+    height: max-content;
+    border-radius: 5px;
+    background-color: #ececec;
+    transition: .7s;
+    color: rgba(3, 119, 51, 0.966);
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.945), 10px 10px 15px rgba(48, 48, 48, 0.205);
+}
+
+.slide i {
+    cursor: pointer;
+}
+
+
+/* go to top */
+
+.scrolltop {
+    cursor: pointer;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    border: none;
+    color: #f4f4f4;
+    background-color: rgba(1, 111, 255, 0.55);
+    padding: 6px;
+    border-radius: 7px;
+    box-shadow: 0 5px 2px rgba(1, 111, 255, 0.425);
+}
+
+.float-right {
+    float: right !important;
+}
+
+@media (min-width:540px) and (max-width: 768px) {
+    #wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #wrapper .table_div,
+    #wrapper .book_form {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+}
+
+
+/* ================== jQuery Table ======================= */

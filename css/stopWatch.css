@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+}
+
+.wrapper p {
+    font-size: 3.1rem;
+}
+
+.wrapper h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.wrapper button {
+    margin: 3rem 1.2rem;
+}

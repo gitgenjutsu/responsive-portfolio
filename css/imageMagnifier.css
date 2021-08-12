@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e2e2e2;
+}
+
+.image {
+    width: 600px;
+    margin: 50px 0;
+    background-color: #fff;
+}

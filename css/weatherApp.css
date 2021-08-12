@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    color: #fff;
+}
+
+.row {
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.location,
+.temperature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* .temperature {
+    flex-direction: column;
+} */
+
+.degree_div {
+    display: flex;
+    align-items: center;
+}
+
+.degree_div span {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.degree_div h2 {
+    font-size: 40px;
+}
